@@ -1,5 +1,4 @@
 .Header{
-
   margin: auto;
   width: 65%;
   border: 1.5px solid whitesmoke;
@@ -9,7 +8,18 @@
   font-family: "Barlow Semi Condensed";
   color: rgb(255, 255, 255);
 
+}
+.left{
+    height: 90%;
 
+        float: left;
 
+}
+.square {
+    float: right;
+    border-radius: 15px;
 
+  width: 60%;
+  height: 100%;
+  background: white;
 }
