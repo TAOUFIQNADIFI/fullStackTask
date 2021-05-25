@@ -6,7 +6,7 @@ import picture2 from '../images/picture21.jpg'
 import picture3 from '../images/picture3.jpg'
 
 
-class Main1 extends React.Component {
+class Main2 extends React.Component {
 
   
   render() {
@@ -15,19 +15,18 @@ class Main1 extends React.Component {
     return(
 
         <div className="container">
-<div className="row">
 
-    <div className="col-md-6 mx-auto">
-    <a href="#"><img src={picture1} alt="" className="img-thumbnail"></img></a>
+<div className="row ">
 
-    </div>
-</div>
-<div className="row mix-auto">
-
-    <div className="col-md-6">
+    <div className="col-md-4">
     <a href="#"><img src={picture2} alt="" className="img-thumbnail"></img></a>
     </div>
-    <div className="col-md-6">
+
+    <div className="col-md-4">
+    <a href="#"></a>
+    </div>
+
+    <div className="col-md-4">
     <a href="#"> <img src={picture3} alt="" className="img-thumbnail"></img></a>
     </div>
 </div>
@@ -37,4 +36,4 @@ class Main1 extends React.Component {
   }
 }
 
-export default Main1;
+export default Main2;

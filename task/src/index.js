@@ -8,12 +8,13 @@ import Footer from './components/Footer.js'
 import'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import Main1 from './components/Main1';
+import Main2 from './components/Main2';
 
 ReactDOM.render(
   <React.StrictMode>
     
 <Header/>
-<Main1/>
+<Main2/>
 <div id="main"></div> 
 <Footer/>
   </React.StrictMode>,
