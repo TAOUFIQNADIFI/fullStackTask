@@ -7,11 +7,14 @@ import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import'bootstrap/dist/css/bootstrap.css';
 import './index.css';
+import Main1 from './components/Main1';
 
 ReactDOM.render(
   <React.StrictMode>
     
-<Header/> 
+<Header/>
+<Main1/>
+<div id="main"></div> 
 <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
