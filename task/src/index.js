@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header.js'
+import Footer from './components/Footer.js'
 import'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
@@ -11,6 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     
 <Header/> 
+<Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

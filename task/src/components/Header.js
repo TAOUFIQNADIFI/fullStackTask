@@ -11,8 +11,8 @@ class Header extends React.Component {
 
     return(
 <div  className = "container">
-<div className = "jumbotron">
-<div className="row">
+<div className = "jumbotron" >
+<div className="row" >
   <div className="col-sm-4">
 
   

@@ -1,0 +1,19 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+  }
+
+  .foot{
+    float: right;
+    border-radius: 15px;
+    border: 1.5px solid whitesmoke;
+margin-right: 5%;
+  width: 15%;
+  height: 100%;
+
+  }
