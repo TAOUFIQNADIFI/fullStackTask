@@ -14,12 +14,14 @@ class Footer extends React.Component {
   
 
         //<!-- Footer -->
+        <div className="row">
         <div className="footer">
             <div className="foot" >
 
   <h4>RULES</h4> 
   
   </div>
+</div>
 </div>
       
 );

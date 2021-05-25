@@ -1,0 +1,8 @@
+img{
+    width: 200px;
+    height: 200px;
+
+}
+img:hover {
+    box-shadow: 0 0 3px 3px rgba(1, 186, 25, 0.5);
+  }
