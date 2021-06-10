@@ -19,7 +19,7 @@ class Main2 extends React.Component {
 <div className="row ">
 
     <div className="col-md-4">
-    <a href="#"><img src={picture2} alt="" className="img-thumbnail"></img></a>
+    {/* <a href="#"><img src={picture2} alt="" className="img-thumbnail"></img></a> */}
     </div>
 
     <div className="col-md-4">

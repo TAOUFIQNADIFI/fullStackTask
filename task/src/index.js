@@ -9,13 +9,35 @@ import'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import Main1 from './components/Main1';
 import Main2 from './components/Main2';
+import Main3 from './components/Main3';
+
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
+    <Router>
+
     
 <Header/>
-<Main2/>
-<div id="main"></div> 
+<Switch>
+          <Route exact path="/main1">
+            <Main1 />
+          </Route>
+          <Route path="/main2">
+            <Main2 />
+          </Route>
+          <Route path="/main3">
+            <Main3 />
+          </Route>
+        </Switch>
+    </Router>
+ 
 <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
