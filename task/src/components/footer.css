@@ -10,8 +10,8 @@
 
   .foot{
     float: right;
-    border-radius: 15px;
-    border: 1.5px solid whitesmoke;
+    /* border-radius: 15px;
+    border: 1.5px solid whitesmoke; */
     margin-right: 10%;
     width: 10%;
     height: 100%;
