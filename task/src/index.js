@@ -10,6 +10,9 @@ import './index.css';
 import Main1 from './components/Main1';
 import Main2 from './components/Main2';
 import Main3 from './components/Main3';
+import App1 from './components/App1';
+
+
 
 
 import {
@@ -20,26 +23,7 @@ import {
 } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-
-    
-<Header/>
-<Switch>
-          <Route exact path="/main1">
-            <Main1 />
-          </Route>
-          <Route path="/main2">
-            <Main2 />
-          </Route>
-          <Route path="/main3">
-            <Main3 />
-          </Route>
-        </Switch>
-    </Router>
- 
-<Footer/>
-  </React.StrictMode>,
+  <App1/>,
   document.getElementById('root')
 );
 

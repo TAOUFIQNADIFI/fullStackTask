@@ -9,7 +9,7 @@ import picture3 from '../images/picture3.jpg'
 class Main2 extends React.Component {
 
   
-  render() {
+  render(props) {
     
 
     return(
@@ -19,14 +19,18 @@ class Main2 extends React.Component {
 <div className="row ">
 
     <div className="col-md-4">
+      <h3>YOU PICKED</h3>
     <a href="#"><img src={picture2} alt="" className="img-thumbnail"></img></a> 
     </div>
 
     <div className="col-md-4">
     <a href="#"></a>
+
     </div>
 
     <div className="col-md-4">
+    <h3>THE HOUSE PICKED</h3>
+
     <a href="#"> <img src={picture3} alt="" className="img-thumbnail"></img></a>
     </div>
 </div>

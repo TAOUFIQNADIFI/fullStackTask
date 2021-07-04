@@ -6,7 +6,7 @@ import './Header.css';
 class Header extends React.Component {
 
   
-  render() {
+  render(props) {
     
 
     return(
@@ -24,6 +24,7 @@ class Header extends React.Component {
     <div className = "col-sm-4">
 <div className = "square ">
   <h4 className="text-center">Score</h4>
+  <h4>{this.props.score}</h4>
 
 
 </div>
