@@ -21,6 +21,7 @@ import '../index.css';
 import Main1 from './Main1';
 import Main2 from './Main2';
 import Main3 from './Main3';
+import Pict from './Pict.js';
 
 
 
@@ -38,7 +39,7 @@ class App1 extends React.Component {
            choosen : "",
            score : 0,
            selectedPic : "",
-           isSelected : "" ,
+           isSelected : false ,
            pictures:[
             {
                url: 'task\src\images\picture1.jpg',
@@ -65,51 +66,65 @@ class App1 extends React.Component {
    
 
         this.selectItem = this.selectItem.bind(this);
+        //this.handleCallback = this.handleCallback(this);
       }
         
-      
+
+
+      handleCallback = (childData) =>{
+        this.selectItem();
+        this.setState({selectedPic: childData});
+
+                console.log(childData)
+
+        console.log(this.props.url)
+        console.log(this.state.selectedPic);
+
+    }
+
+
       selectItem(){
-        const a = true;
 
          this.setState({ isSelected: true });
-         this.setState({selectedPic: this.props.url})
-         console.log(this.state.isSelected)
-         console.log(this.props.url)
-
-         
+         console.log(this.state.isSelected)         
         }
 
      
   
     render() {
       //console.log(this.state.pictures[0]);
+const a = this.state.isSelected
 
 
       return(
+
+
           <div>
-        <React.StrictMode>
-        <Router>
         
       <Header score = {this.state.score}/>
-      <Switch>
-              <Route exact path="/main1">
-               <Main1  pic1 = {picture1} selectItem = {this.selectItem} content = {this.state.isSelected} value1={"helllooo"} />
+
+      {a 
+
+             ? <Main2  selectedItem = {this.state.selectedPic}  
+             parentCallback={this.handleCallback} />
+             
+             :<Main1  pic1 = {picture1}   parentCallback={this.handleCallback} 
+             selectItem = {this.selectItem} content = {this.state.isSelected} value1={"helllooo"} />
+              
+              
+      }
+              
+              
               <h1>{this.state.isSelected.toString()}   hooooo</h1>
               <h1>{this.state.selectedPic}   hooooo</h1>
+              
 
               
-              </Route>
-              <Route path="/main2">
-                <Main2 />
-              </Route>
-              <Route path="/main3">
-                <Main3 />
-              </Route>
-            </Switch>
-        </Router>
+
+              
+              
       
       <Footer/>
-      </React.StrictMode>,
       </div>
       );
     }

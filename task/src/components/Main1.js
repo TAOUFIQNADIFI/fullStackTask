@@ -22,7 +22,7 @@ class Main1 extends React.Component {
 <div className="row">
 
     <div className="col-md-6 mx-auto" name= "pictures1">
-    <a><Pict url = {this.props.pic1} selectItem = {this.props.selectItem}  parentCallback={this.props.parentCallback}/></a>
+    <a><Pict url = {picture1} selectItem = {this.props.selectItem}  parentCallback={this.props.parentCallback}/></a>
 
     </div>
 </div>
@@ -31,10 +31,10 @@ class Main1 extends React.Component {
 <div className="row mix-auto">
 
     <div className="col-md-6" name= "pictures2">
-    <a> <Pict url = {picture2} selectItem = {this.props.selectItem}/> </a>
+    <a> <Pict url = {picture2} selectItem = {this.props.selectItem}  parentCallback={this.props.parentCallback}/> </a>
     </div>
     <div className="col-md-6" name= "pictures3">
-     <a> <Pict url = {picture3} selectItem = {this.props.selectItem}/></a> 
+     <a> <Pict url = {picture3} selectItem = {this.props.selectItem}  parentCallback={this.props.parentCallback} /></a> 
     </div>
     <div><h1>{this.props.content}</h1>
     <h1>{this.props.value1}</h1>

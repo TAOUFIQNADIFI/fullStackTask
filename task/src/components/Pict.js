@@ -8,9 +8,9 @@ import pic1 from "../images/picture1.jpg"
 class Pict extends React.Component {
   
     onTrigger = (event) => {
-        this.props.selectItem();
-        this.props.parentCallback(event.target.src);
+        this.props.parentCallback(this.props.url);
         event.preventDefault();
+        console.log(this.props.url);
     } 
 
 
@@ -21,7 +21,8 @@ class Pict extends React.Component {
       return(
     
   
-          <img onClick = {this.onTrigger} src= {this.props.url} alt="" className="img-thumbnail"></img>
+          <img onClick = {this.onTrigger} src= {this.props.url} 
+          alt="" className="img-thumbnail"></img>
         
   );
     }
